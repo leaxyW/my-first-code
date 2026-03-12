@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Healthy Living Tips</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4fff6;
+      color: #222;
+      text-align: center;
+    }
+
+    .header {
+      background: #2e7d32;
+      color: white;
+      padding: 30px 20px;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+
+    .header p {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .container {
+      padding: 30px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      margin-top: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .tip-box {
+      font-size: 20px;
+      margin: 20px 0;
+      color: #1b5e20;
+      font-weight: bold;
+    }
+
+    button {
+      padding: 12px 24px;
+      background: #43a047;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2e7d32;
+    }
+
+    .footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #e8f5e9;
+      font-size: 14px;
+      color: #444;
+    }
+  </style>
+
+  <script>
+    function showTip() {
+      let tips = [
+        "Drink plenty of water every day.",
+        "Wash your hands regularly to prevent infections.",
+        "Eat fruits and vegetables for a balanced diet.",
+        "Exercise for at least 30 minutes daily.",
+        "Get enough sleep to keep your body healthy.",
+        "Avoid too much sugar and junk food.",
+        "Take care of your mental health and rest when needed."
+      ];
+
+      let randomTip = tips[Math.floor(Math.random() * tips.length)];
+      document.getElementById("tip").innerHTML = randomTip;
+    }
+  </script>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Healthy Living Tips 🌿</h1>
+    <p>A simple website promoting better health habits</p>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h2>Today's Health Tip</h2>
+      <div id="tip" class="tip-box">Click the button below to see a health tip!</div>
+      <button onclick="showTip()">Show Health Tip</button>
+    </div>
+
+    <div class="card">
+      <h2>Why Health Matters</h2>
+      <p>
+        Good health helps us stay active, focused, and happy. Small daily habits
+        like eating well, sleeping enough, and exercising can make a big difference.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer">
+    Created by Lexy | #MyFirstWebsite
+  </div>
+
+</body>
+</html>
